@@ -2,8 +2,6 @@
 <html>
   <head>
     <title>ConnorCoder/AES</title>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.2/rollups/aes.js"></script>
-    <script src="script.js"></script>
     <style>
       * {
         font-family: Arial;
@@ -30,5 +28,10 @@
     <textarea id="dec-msg" placeholder="Encrypted Message"></textarea><br>
     <input id="dec-key" placeholder="Key" type="password" autocomplete="off"/><br>
     <textarea id="dec-out" placeholder="output" readonly></textarea>
+    
+    <span style="position:fixed;right:5px;bottom:5px;">Loading CryptoJS...</span>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.2/rollups/aes.js" onload="document.getElementsByTagName('span')[0].style.display='none';"></script>
+    <script src="script.js"></script>
   </body>
 </html> 
