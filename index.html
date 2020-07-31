@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>ConnorCoder/AES</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.2/rollups/aes.js"></script>
+    <script src="script.js"></script>
+    <style>
+      * {
+        font-family: Arial;
+        margin: auto;
+      }
+      textarea, input {
+        width: 100vw;
+        height: 75px;
+      }
+      input {
+        height: auto;
+        resize: none;
+        margin-bottom: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <h3>Encrypt</h3>
+    <textarea id="enc-msg" placeholder="Message"></textarea><br>
+    <input id="enc-key" placeholder="Key" type="password" autocomplete="off"/><br>
+    <textarea id="enc-out" placeholder="Output" readonly></textarea>
+
+    <h3>Decrypt</h3>
+    <textarea id="dec-msg" placeholder="Encrypted Message"></textarea><br>
+    <input id="dec-key" placeholder="Key" type="password" autocomplete="off"/><br>
+    <textarea id="dec-out" placeholder="output" readonly></textarea>
+  </body>
+</html>
